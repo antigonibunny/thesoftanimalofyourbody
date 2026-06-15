@@ -1,0 +1,12 @@
+<!doctype html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>Antigoni Fairy — AR</title><meta name="description" content="An augmented-reality fairy performance. Tap the floor to place her."><meta property="og:title" content="Antigoni Fairy — AR"><meta property="og:description" content="Tap the floor to place the fairy and watch her perform."><script crossorigin="anonymous" src="./external/scripts/8frame-1.5.0.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@8thwall/xrextras@1/dist/xrextras.js" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/@8thwall/landing-page@1/dist/landing-page.js" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/@8thwall/engine-binary@1/dist/xr.js" crossorigin="anonymous" async="true" data-preload-chunks="slam"></script></head><body><script src="bundle.js"></script><div class="overlay"><span id="promptText">Move your phone to scan the floor, then tap to place the fairy</span></div><a-scene place-fairy landing-page xrextras-loading xrextras-runtime-error gltf-model="dracoDecoderPath: https://www.gstatic.com/draco/versioned/decoders/1.5.6/" renderer="colorManagement: true; physicallyCorrectLights: true" xrweb="allowedDevices: any"><a-assets><a-asset-item id="fairyModel" src="assets/antigoni_fairy_AR.glb"></a-asset-item></a-assets><a-camera id="camera" position="0 4 0" raycaster="objects: .cantap" cursor="fuse: false; rayOrigin: mouse;"></a-camera><a-entity light="type: directional;
+           intensity: 1.0;
+           castShadow: true;
+           shadowMapHeight: 2048;
+           shadowMapWidth: 2048;
+           shadowCameraTop: 6;
+           shadowCameraBottom: -6;
+           shadowCameraRight: 6;
+           shadowCameraLeft: -6;
+           shadowCameraNear: 0.1;
+           shadowCameraFar: 30;
+           target: #camera" xrextras-attach="target: camera; offset: 3 6 2" position="2 5 2" shadow></a-entity><a-light type="ambient" intensity="0.9"></a-light><a-entity id="ground" class="cantap" geometry="primitive: plane; width: 1000; height: 1000" rotation="-90 0 0" position="0 0 0" material="shader: shadow; transparent: true; opacity: 0.35" shadow="receive: true"></a-entity></a-scene></body></html>
