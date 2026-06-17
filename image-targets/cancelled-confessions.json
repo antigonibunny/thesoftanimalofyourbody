@@ -1,0 +1,23 @@
+{
+  "imagePath": "image-targets/cancelled-confessions_luminance.jpg",
+  "metadata": null,
+  "name": "cancelled-confessions",
+  "type": "PLANAR",
+  "properties": {
+    "left": 11,
+    "top": 0,
+    "width": 900,
+    "height": 1200,
+    "isRotated": false,
+    "originalWidth": 922,
+    "originalHeight": 1200
+  },
+  "resources": {
+    "originalImage": "cancelled-confessions_original.jpg",
+    "croppedImage": "cancelled-confessions_cropped.jpg",
+    "thumbnailImage": "cancelled-confessions_thumbnail.jpg",
+    "luminanceImage": "cancelled-confessions_luminance.jpg"
+  },
+  "created": 1781691580661,
+  "updated": 1781691580661
+}
